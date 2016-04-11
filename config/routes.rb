@@ -20,5 +20,5 @@ Rails.application.routes.draw do
 
   get '/pets_search' => 'pets#search_form'
   post '/pets_search' => 'pets#search_results'
-end
+end 
 

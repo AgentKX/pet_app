@@ -1,0 +1,2 @@
+module AdopterUsersHelper
+end

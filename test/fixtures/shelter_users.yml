@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shelter_name: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  email: MyString
+  phone_number: MyString
+  pet_name: MyString
+  gender: MyString
+  breed: MyString
+  weight: 1
+  color: MyString
+  age: MyString
+  description: MyText
+  special_needs: false
+  energy_level: 1
+  needs_yard: false
+  kids_ok: false
+  fees: 9.99
+
+two:
+  shelter_name: MyString
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+  email: MyString
+  phone_number: MyString
+  pet_name: MyString
+  gender: MyString
+  breed: MyString
+  weight: 1
+  color: MyString
+  age: MyString
+  description: MyText
+  special_needs: false
+  energy_level: 1
+  needs_yard: false
+  kids_ok: false
+  fees: 9.99

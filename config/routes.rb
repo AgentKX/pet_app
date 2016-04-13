@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   # get '/shelter_users/:id/edit' => 'shelter_users#edit'
   # patch '/shelter_users/:id' => 'shelter_users#update'
   # delete '/shelter_users/:id' => 'shelter_users#destroy'
-
+  devise_for :users
+  get '/'=> 'pets#index'
+  get "/" => 'pets#index'
   get '/pets' => 'pets#index'
   get '/pets/:id' => 'pets#show'
 
@@ -22,3 +24,4 @@ Rails.application.routes.draw do
   post '/pets_search' => 'pets#search_results'
 end 
 
+ 

@@ -11,3 +11,4 @@ class PetsController < ApplicationController
     render 'show.html.erb'
   end
 end
+ 

@@ -1,3 +1,0 @@
-class AdopterUsersController < ApplicationController
-  
-end

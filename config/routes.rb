@@ -15,10 +15,16 @@ Rails.application.routes.draw do
   # patch '/shelter_users/:id' => 'shelter_users#update'
   # delete '/shelter_users/:id' => 'shelter_users#destroy'
   devise_for :users
-  get '/'=> 'pets#index'
+  get '/' => 'pets#index'
   get "/" => 'pets#index'
   get '/pets' => 'pets#index'
   get '/pets/:id' => 'pets#show'
+
+  get '/favorite_pets' => 'favorite_pets#index'
+  post '/favorite_pets' => 'favorite_pets#create'
+  get '/favorite_pets/:id' => 'favorite_pets#index'
+  delete '/favorite_pets/:id' => 'favorite_pets#delete'
+  
 
   get '/pets_search' => 'pets#search_form'
   post '/pets_search' => 'pets#search_results'

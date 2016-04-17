@@ -5,9 +5,9 @@ class CreatePets < ActiveRecord::Migration
       t.string :image
       t.string :gender
       t.string :breed
-      t.string :weight
+      t.integer :weight
       t.string :color
-      t.string :age
+      t.integer :age
       t.text :description
       t.boolean :special_needs
       t.integer :energy_level

@@ -1,17 +1,25 @@
+<h2><%= @pet.name %></h2>
+<h4><%= @pet.description %></h4>
+<h5><%= @pet.gender%></h5>
+<h5><%= @pet.breed%></h5>
+<h5>I weigh: <%= @pet.weight%></h5>
+<h5>Color: <%= @pet.color%></h5>
+<h5>I am <%= @pet.age%> years old. </h5>
+<h5>My energy level is <%= @pet.energy_level%> out of 5.</h5>
+<h5>I need a yard: <%= @pet.needs_yard%></h5>
+<h5>Kids are ok: <%= @pet.kids_ok%></h5>
+<h5>I have special needs: <%= @pet.special_needs%></h5>
+<h5>Adoption Fee: <%= @pet.fees%></h5>
 
-<ul>
-  <h2><%= @pet.name %></h2>
-  <h4><%= @pet.description %></h4>
-  <h5><%= @pet.gender%></h5>
-  <h5><%= @pet.breed%></h5>
-  <h5><%= @pet.weight%></h5>
-  <h5><%= @pet.color%></h5>
-  <h5><%= @pet.age%></h5>
-  <h5><%= @pet.energy_level%></h5>
-  <h5><%= @pet.needs_yard%></h5>
-  <h5><%= @pet.kids_ok%></h5>
-  <h5><%= @pet.special_needs%></h5>
-  <h5><%= @pet.fees%></h5>
-   </ul>
+<%= form_tag '/favorite_pets', method: :post do %>
+  <div>
+    <%= hidden_field_tag :pet_id, @pet.id %>
+  </div>
+  <div>
+    <button class= "btn btn-success" type="submit">Add me to favorite pets!</button>
+  </div>
+<% end %>
+
+<%= image_tag @pet.image %>
+
 <a href="/pets">Back to all Pets</a>
-<h6><img src="<%= @pet.image %>"></h6> 

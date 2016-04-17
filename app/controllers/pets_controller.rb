@@ -10,5 +10,13 @@ class PetsController < ApplicationController
     @pet = Pet.find_by(id: pet_id)
     render 'show.html.erb'
   end
+
+  def create
+    Pet.create(
+      name: params[:name], 
+      image: params[:image], 
+      description: params[:description]
+    )
+    render 'create.html.erb'
+  end
 end
- 
